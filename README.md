@@ -11,6 +11,7 @@ g++ -O2 -DNDEBUG -Wall main.cpp -o main.exe
 
 ## Small size (embedded, downloads)
 g++ -Os -s -flto main.cpp -o main.exe
+
 g++ -Os -s -flto -fno-exceptions -fno-rtti -Wl,--gc-sections main.cpp -o main.exe
 
 ## Debug (development)
